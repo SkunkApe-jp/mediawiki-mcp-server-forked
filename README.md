@@ -30,6 +30,17 @@ Then, set this endpoint as --base-url:
 
 ![](/imgs/PixPin_2025-04-04_19-41-55.png)
 
+### Example: Using the Lost Media Wiki
+
+To use this server with the Lost Media Wiki, you can set the `--base-url` to `https://lostmediawiki.com/w/`:
+
+```bash
+uvx mediawiki-mcp-server --base-url https://lostmediawiki.com/w/
+```
+
+**Note on Compatibility:** During testing, it was found that the Lost Media Wiki's API may not be fully compatible with this server. Specifically, there may be issues when trying to retrieve page content. This is likely due to differences in the MediaWiki API versions or server configurations.
+
+
 Available transports: stdio (default), streamable-http (http://localhost/mcp), and SSE (http://localhost/sse). See -h for all options.
 
 ```bash
